@@ -1,0 +1,2 @@
+- setup-file:
+    local-name: /home/pi/catkin_ws/src/ir_control/devel/setup.sh
