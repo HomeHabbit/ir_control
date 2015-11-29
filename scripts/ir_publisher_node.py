@@ -46,8 +46,9 @@ def ir_control_node():
     rate = rospy.Rate(1) # 1hz
     while not rospy.is_shutdown():
 	msg = IRControlMsg()
-	msg.command = "VOLUME_UP"
-	msg.id = "TV"
+	msg.command = "IR_volume"
+	msg.value = "little_up"
+	msg.id = "TV1"
         pub.publish(msg)
         rate.sleep()
 
